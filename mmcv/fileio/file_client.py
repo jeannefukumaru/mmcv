@@ -568,6 +568,7 @@ class HardDiskBackend(BaseStorageBackend):
             filepath (str or Path): Path to write data.
         """
         mmcv.mkdir_or_exist(osp.dirname(filepath))
+        print(f'save artefact filepath: {osp.abspath(filepath)}')
         with open(filepath, 'wb') as f:
             f.write(obj)
 

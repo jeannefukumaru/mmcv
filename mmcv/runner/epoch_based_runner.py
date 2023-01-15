@@ -143,7 +143,7 @@ class EpochBasedRunner(BaseRunner):
                         filename_tmpl: str = 'epoch_{}.pth',
                         save_optimizer: bool = True,
                         meta: Optional[Dict] = None,
-                        create_symlink: bool = True) -> None:
+                        create_symlink: bool = False) -> None:
         """Save the checkpoint.
 
         Args:
